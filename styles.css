@@ -1,0 +1,163 @@
+:root {
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #effff4;
+  background: #07120d;
+  font-synthesis: none;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background:
+    radial-gradient(circle at top, #163c28 0%, #07120d 48%);
+}
+
+button {
+  font: inherit;
+}
+
+.app {
+  width: min(720px, 100%);
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 24px 16px 40px;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 22px 8px 28px;
+}
+
+.leaf {
+  width: 58px;
+  height: 58px;
+  display: grid;
+  place-items: center;
+  border-radius: 18px;
+  background: #183d29;
+  font-size: 30px;
+}
+
+.eyebrow {
+  margin: 0 0 5px;
+  font-size: 11px;
+  letter-spacing: 2px;
+  opacity: .65;
+}
+
+h1, h2, p {
+  margin-top: 0;
+}
+
+h1 {
+  margin-bottom: 4px;
+  font-size: 32px;
+}
+
+.muted {
+  margin-bottom: 0;
+  opacity: .65;
+}
+
+.card, .small-card {
+  border: 1px solid rgba(255,255,255,.08);
+  background: rgba(19, 43, 29, .85);
+  border-radius: 22px;
+  box-shadow: 0 16px 45px rgba(0,0,0,.18);
+}
+
+.reward-card {
+  padding: 22px;
+}
+
+.tag {
+  display: inline-block;
+  margin-bottom: 12px;
+  padding: 6px 9px;
+  border-radius: 999px;
+  background: #244d34;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.reward-card h2 {
+  margin-bottom: 8px;
+  font-size: 25px;
+}
+
+.reward-card p {
+  color: rgba(239,255,244,.7);
+}
+
+.watch-button {
+  width: 100%;
+  margin-top: 10px;
+  padding: 15px 18px;
+  border: 0;
+  border-radius: 14px;
+  color: #07120d;
+  background: #8cf29e;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.watch-button:disabled {
+  opacity: .55;
+  cursor: not-allowed;
+}
+
+.warning {
+  margin: 12px 0 0 !important;
+  color: #ffd37b !important;
+  font-size: 13px;
+}
+
+.status {
+  margin: 12px 0 0 !important;
+  font-size: 13px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.small-card {
+  min-height: 115px;
+  padding: 16px;
+}
+
+.small-card span {
+  display: block;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.small-card strong,
+.small-card small {
+  display: block;
+}
+
+.small-card small {
+  margin-top: 5px;
+  opacity: .55;
+}
+
+.footer {
+  margin: 20px 5px 0;
+  text-align: center;
+  font-size: 11px;
+  opacity: .45;
+}
+
+@media (max-width: 420px) {
+  .app { padding: 16px 12px 32px; }
+  h1 { font-size: 28px; }
+}
